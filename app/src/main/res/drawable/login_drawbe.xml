@@ -1,0 +1,30 @@
+<!-- res/drawable/rounded_top_yellow_bottom.xml -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- White rectangle for the bottom -->
+    <item android:top="50dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+
+    <!-- Yellow rectangle for the middle -->
+    <item android:top="0dp" android:bottom="50dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFEB3B" /> <!-- Change the color as needed -->
+        </shape>
+    </item>
+
+    <!-- Rounded top rectangle with desired color -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FF4081" /> <!-- Change the color as needed -->
+            <corners
+                android:topLeftRadius="20dp"
+            android:topRightRadius="20dp" /> <!-- Adjust the radius as needed -->
+        </shape>
+    </item>
+
+</layer-list>
+
